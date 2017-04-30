@@ -1,0 +1,24 @@
+{% if include.date %}
+    {% assign processed_date = include.date %}
+{% else if page.date  %}
+    {% assign processed_date = page.date %}
+{% endif %}
+
+{% comment %}-------- Test if we have a date to process --------{% endcomment %}
+{% if processed_date %}
+
+    {% assign month = "styczeń,luty,marzec,kwiecień,maj,czerwiec,lipiec,sierpień,wrzesień,październik,listopad,grudzień" | split: "," %}
+
+    {% comment %}------ Note : sunday is the first day in this array -------{% endcomment %}
+    {% assign day = "poniedziałek,wtorek,środa,czwartek,piątek,sobota,niedziela" | split: "," %}
+
+    {% assign month_index = processed_date | date: "%m" | minus: 1 %}
+
+    {%comment%}----------------------------------------------
+    Here **minus: 0** is a trick to convert day_index from string to integer and then use it as an array index.
+    ----------------------------------------------{%endcomment%}
+    {% assign day_index = processed_date | date: "%w" | minus: 0 %}
+
+    {%comment%}-------- Output the date without 0 in front of 07 08 etc ----------{%endcomment%}
+    {{ day[day_index] }}, {{ processed_date | date: "%d" | minus: 0 }} {{ month[month_index] }} {{ processed_date | date: "%Y" }}
+{% endif %}

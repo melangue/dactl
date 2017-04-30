@@ -1,0 +1,23 @@
+//-------------------------------
+// Blockquotes
+//-------------------------------
+
+blockquote {
+  padding: 0 0 4px 15px;
+  margin: 0 0 2rem -1rem;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  font-style: italic;
+  line-height: $base-line-height;
+  color: var(--text-color-light);
+  border-left: 3px solid var(--text-color-light);
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 48rem) {
+  blockquote {
+    margin: 0 0 2rem 0;
+  }
+}

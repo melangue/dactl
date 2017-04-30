@@ -1,0 +1,21 @@
+{% if include.date %}
+    {% assign processed_date = include.date %}
+{% else if page.date  %}
+    {% assign processed_date = page.date %}
+{% endif %}
+
+{% comment %}-------- Test if we have a date to process --------{% endcomment %}
+{% if processed_date %}
+
+    {% assign month = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
+
+    {% assign month_index = processed_date | date: "%m" | minus: 1 %}
+
+    {%comment%}----------------------------------------------
+    Here **minus: 0** is a trick to convert day_index from string to integer and then use it as an array index.
+    ----------------------------------------------{%endcomment%}
+    {% assign day_index = processed_date | date: "%w" | minus: 0 %}
+
+    {%comment%}-------- Output the date ----------{%endcomment%}
+    {{ month[month_index] }} {{ processed_date | date: "%Y" }}
+{% endif %}

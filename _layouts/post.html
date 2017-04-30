@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+
+{% include post.html post=page %}
+
+{% if site.discus_identifier %}
+    {% include externals/disqus.html %}
+    {% include comments.html post=page %}
+{% endif %}
+
+{% include post/related.html %}

@@ -1,0 +1,57 @@
+// Articles / posts
+//-------------------------------
+
+article {
+    &.blog {
+      margin-bottom: 2em;
+
+      &:last-of-type {
+        margin-bottom: 6em;
+      }
+
+      p {
+        margin-bottom: .5rem;
+      }
+    }
+
+
+    &.post {
+      margin-bottom: 4em;
+    }
+
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      word-wrap: break-word;
+
+      &.lead {
+      font-size: $lead-font-size;
+      margin-bottom: 3rem;
+      }
+
+      a {
+      border-bottom: .09em solid var(--link-color);
+      }
+    }
+
+    // resets for lists inside articles
+    li ul { // reset which allows <ul>/<ol> nesting
+        margin-bottom: 0;
+    }
+    li+li { // aligns them nicely
+       margin-top: 0rem;
+    }
+}
+
+// Bleed image class
+.oversize {
+    margin: 2.5rem 0 2.5rem -15%;
+    max-width: 130%;
+}
+@media (max-width: 48rem) {
+  .oversize {
+    margin: inherit;
+    max-width: 100%;
+  }
+}

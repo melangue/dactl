@@ -1,0 +1,66 @@
+// Notice boxes
+//-------------------------------
+// Idea taken from
+// https://github.com/mmistakes/minimal-mistakes/blob/master/_sass/_notices.scss
+
+@mixin notice($notice_bg, $notice-border-color, $notice-icon, $notice-icon-color) {
+  padding: 1rem 1rem 1rem 5rem;
+  background-color: var(--code-bg-color);
+  font-size: 0.85em;
+  box-shadow: 0 1px 2px var(--shadow-color);
+  position: relative;
+
+  &:before {
+      background-color: $notice-bg;
+      border: 1px solid $notice-border-color;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 4rem;
+      content: '';
+    }
+
+  &:after {
+      font-family: 'icomoon';
+      content: $notice-icon;
+      color: $notice-icon-color;
+      display: block;
+      font-size: 1.25em;
+      font-weight: normal;
+      left: 2rem;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+}
+
+.notice {
+  $notice-bg: #d6e3ea;
+  $notice-border-color: rgba(200, 212, 218, .4);
+  $notice-icon: '\e88e';
+  $notice-icon-color: #596267;
+
+  @include notice($notice-bg, $notice-border-color, $notice-icon, $notice-icon-color)
+}
+
+.notice-alert {
+  $notice-alert-bg: #eae6ca;
+  $notice-border-color: rgba(222, 218, 192, .4);
+  $notice-alert-icon: '\e002';
+  $notice-alert-icon_color: #77703a;
+
+  @include notice($notice-alert-bg, $notice-border-color, $notice-alert-icon, $notice-alert-icon-color)
+}
+
+.notice-success {
+  $notice-success-bg: #d6ead8;
+  $notice-border-color: rgba(202, 220, 204, .4);
+  $notice-success-icon: '\e834';
+  $notice-success-icon_color: #506b53;
+
+  @include notice($notice-success-bg, $notice-border-color, $notice-success-icon, $notice-success-icon-color)
+}
