@@ -1,6 +1,9 @@
 # dactl
 dactl is a fast, modern and configurable [Jekyll](http://jekyllrb.com/) theme with some tricks up it's sleeve. It has a live theme switcher and it's main blog layout display prominent hero images for posts with colored overlays and nice animations.
 
+![light theme](uploads/screenshot_desktop_light.jpg)
+![dark theme](uploads/screenshot_desktop_dark.jpg)
+
 ## Features
 Though minimalistic-looking by nature, dactl is easily configurable and includes quite a lot of niceties:
 
@@ -52,9 +55,6 @@ It was tested with and works fully on webkit-powered browsers - Safari, Chrome, 
 
 ### Layout configurations
 By default dactl uses blog layout which you can see below or check for yourself in the live version.
-
-![light theme](uploads/screenshot_desktop_light.jpg)
-![dark theme](uploads/screenshot_desktop_dark.jpg)
 
 Main blog layout displays 5 posts. Each post has a heading contained in a medium-sized tile - with an color overlay over the background image. You need to set the image and color of the overlay in post's YAML front matter.
 
