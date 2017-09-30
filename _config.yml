@@ -44,7 +44,7 @@ author:
 ## You should not change anything here unless you know what you are doing
 
 # Gems
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
