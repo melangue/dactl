@@ -1,2 +1,9 @@
-_site
-.sass-cache
+# Generated site
+/_site
+
+# Local packages
+/.bundle/ruby/
+
+# Temporary files
+.sass-cache/
+.jekyll-metadata
