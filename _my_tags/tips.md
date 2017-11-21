@@ -1,0 +1,4 @@
+---
+slug: tips
+name: tips
+---
