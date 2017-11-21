@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "django 프로젝트"
+title:  "django project"
 tags:
   - python
   - django
