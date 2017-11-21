@@ -4,7 +4,7 @@ title: '무료 이미지 사용하기'
 tags:
   - dactl
   - howto
-hero: https://images.unsplash.com/photo-1499107136159-5bd9740c34d8?auto=format&fit=crop&w=1350&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D
+hero: https://images.unsplash.com/photo-1503376735680-a97d491ec716?auto=format&fit=crop&w=800&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D
 overlay: purple
 ---
 
