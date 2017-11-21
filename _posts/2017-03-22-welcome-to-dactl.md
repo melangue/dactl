@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Welcome to dactl!"
+title:  "django 프로젝트"
 tags:
-  - dactl
-  - jekyll
+  - python
+  - django
 hero: https://source.unsplash.com/collection/430471/
 overlay: red
 published: true
