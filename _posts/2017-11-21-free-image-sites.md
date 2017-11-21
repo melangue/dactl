@@ -5,7 +5,7 @@ tags:
   - image
   - tips
 hero: https://images.unsplash.com/photo-1503376735680-a97d491ec716?auto=format&fit=crop&w=800&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D
-overlay: yellow
+overlay: purple
 ---
 
 **저작권에 걸리지 않는 무료 이미지 사이트들**
