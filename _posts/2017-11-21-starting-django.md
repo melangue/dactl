@@ -4,7 +4,7 @@ title:  "django 시작하기"
 tags:
   - python
   - django
-hero: https://source.unsplash.com/collection/430471/
+hero: https://cdn.pixabay.com/photo/2014/07/30/22/56/workstation-405768_960_720.jpg
 overlay: red
 published: true
 ---
