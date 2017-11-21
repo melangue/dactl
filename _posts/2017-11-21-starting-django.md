@@ -7,7 +7,7 @@ tags:
 hero: https://source.unsplash.com/collection/430471/
 overlay: red
 published: true
-
+---
 
 **python django 를 사용하여 로컬 웹서버를 띄우는 방법**
 <br>
