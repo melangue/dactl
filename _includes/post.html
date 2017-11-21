@@ -35,7 +35,7 @@
       </h1>
     <!-- Post meta -->
       <div class="post-meta">
-        <span>{{ post.date | date: "%d/%m/%Y" }}</span>
+        <span>{{ post.date | date: "%Y/%m/%d" }}</span>
         <!-- {% include utils/date_custom.html date = post.date %} -->
         <span>
           {% for tag in post.tags %}
