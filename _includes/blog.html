@@ -39,7 +39,7 @@
         {% endif %}
       ">
 
-        <span>{{ post.date | date: "%d/%m/%Y" }}</span>
+        <span>{{ post.date | date: "%Y/%m/%d" }}</span>
 
         {% if site.blog.hero_layout == false %}
         <span class="post-meta-link-nohero"><a href="{{ post.url | prepend:site.baseurl }}">&#9642;</a></span>
