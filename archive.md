@@ -23,8 +23,8 @@ sitemap:
         {% capture category_content %}<a class="label" href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
       {% endif %}
 
-  	{% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
-  	{% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
+  	{% capture month %}{{ post.date | date: '%Y%m' }}{% endcapture %}
+  	{% capture nmonth %}{{ post.next.date | date: '%Y%m' }}{% endcapture %}
   		{% if month != nmonth %}
   			{% if forloop.index != 1 %}
   			</ul>
