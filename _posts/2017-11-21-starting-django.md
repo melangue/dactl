@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "django project"
+title:  "django 시작하기"
 tags:
   - python
   - django
