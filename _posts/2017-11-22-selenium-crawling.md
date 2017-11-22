@@ -35,6 +35,30 @@ published: true
 $ pip install selenium
 $ pip uninstall selenium
 ```
+<br>
+Selenium을 사용하면 `Webdriver` 를 통해 브라우저를 제어하게 된다.<br>
+본 포스팅에서는 `PhantomJS Webdriver` 와 `Chrome Webdriver`를 사용해 보려고한다<br><br>
+
+**What is PhantomJS??**
+<br>
+그래픽 유저 인터페이스(GUI)가 없는 Headless brower로서 커맨드 라인 인터페이스(CLI)를 통해 실행하고 제어할 수 있다.<br>
+웹페이지 개발자 테스트 또는 화면 캡쳐용으로 많이 쓰이고 있다.<br>
+본래 JAVA API로서 많이 사용되었고, python에서도 사용할 수 있다.<br><br>
+
+Chrome 은 너무 유명하니 생략하겠다.<br><br>
+
+**Install Webdriver**
+<br>
+PhantomJS는 <http://phantomjs.org/download.html>에서 다운받을 수 있고, Chrome 드라이버는 <https://sites.google.com/a/chromium.org/chromedriver/downloads>에서 다운로드 받을 수 있다.<br>
+다운로드 받은 파일을 압축을 풀면 드라이버 파일이 나타나는데, 그 저장된 경로를 기억해 두자.<br><br>
+
+**Selenium-Chrome-Crawler 만들기**
+<br>
+먼저 Chrome 이 더 친숙하므로 Chrome driver를 사용하여 만들어 보겠다.<br><br>
+
+```python
+from selenium import webdriver
+```
 
 
 
