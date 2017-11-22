@@ -16,7 +16,7 @@ blog:
   hero_placeholder           : "assets/img/generic_hero.jpg" # placeholder for hero image
   excerpts                   : true # show excerpts instead of full post content on blog page
   inline_footnotes           : true # enable/disable barefoot inline footnotes
-  titles_only                : true # show post titles only on main blog page
+  titles_only                : false # show post titles only on main blog page
 
 # Fonts
   font                       : '"Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif'
