@@ -7,7 +7,6 @@ url                          : "jgtonys.github.io" # the base hostname & protoco
 blog:
   title                      : jgtony
   description                  : Jungyu Kim
-                               this should contain a proper description
 
 # Layout configuration
   logo_path                  : "assets/img/dactl.svg" # path to logo file
