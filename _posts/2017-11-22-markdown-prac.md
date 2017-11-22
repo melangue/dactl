@@ -12,7 +12,8 @@ published: true
 사용해보면 매우 편리하다.<br>
 일일이 html 태그넣어줘서 만들어 냈던 내 옛 웹 페이지들이 너무 불쌍할 정도로 간결하고 심플하고 큐트하게 웹 페이지를 만들어 낼 수 있다.<br>
 그 Markdown 문법을 소개한다.<br>
-<!--break-->
+
+<!–-break-–>
 
 > 이 글은 아래의 주소에서 참조하였습니다.
 > https://gist.github.com/godori/40bb4e48e0b1565bf1a3c2a6e229a1cc
