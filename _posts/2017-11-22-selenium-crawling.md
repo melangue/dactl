@@ -52,12 +52,20 @@ Chrome 은 너무 유명하니 생략하겠다.<br><br>
 PhantomJS는 <http://phantomjs.org/download.html>에서 다운받을 수 있고, Chrome 드라이버는 <https://sites.google.com/a/chromium.org/chromedriver/downloads>에서 다운로드 받을 수 있다.<br>
 다운로드 받은 파일을 압축을 풀면 드라이버 파일이 나타나는데, 그 저장된 경로를 기억해 두자.<br><br>
 
-**Selenium-Chrome-Crawler 만들기**
+**Selenium-PhantomJS-Crawler 만들기**
 <br>
-먼저 Chrome 이 더 친숙하므로 Chrome driver를 사용하여 만들어 보겠다.<br><br>
-
+먼저 PhantomJS driver를 사용하여 만들어 보겠다.<br><br>
+기본적인 순서는 이렇게 진행한다.<br>
+1. Webdriver import
+2. 브라우저를 제어하는 PhantomJS driver 만들기
+3. URL에 해당하는 페이지 소스 가져오기<br><br>
 ```python
 from selenium import webdriver
+
+#phantomjs가 설치되어있지 않은 경우(드라이버 파일 다운로드인 경우)
+driver = webdriver.PhantomJS('다운로드받은위치/phantomjs')
+#phantomjs가 설치되어있는 경우
+driver = webdriver.PhantomJS()
 ```
 
 <br>
