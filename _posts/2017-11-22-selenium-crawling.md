@@ -62,9 +62,9 @@ PhantomJS는 <http://phantomjs.org/download.html>에서 다운받을 수 있고,
 ```python
 from selenium import webdriver
 
-#phantomjs가 설치되어있지 않은 경우(드라이버 파일 다운로드인 경우)
+# phantomjs가 설치되어있지 않은 경우(드라이버 파일 다운로드인 경우)
 driver = webdriver.PhantomJS('다운로드받은위치/phantomjs')
-#phantomjs가 설치되어있는 경우
+# phantomjs가 설치되어있는 경우
 driver = webdriver.PhantomJS()
 ```
 
