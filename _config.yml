@@ -9,7 +9,7 @@ blog:
   description                  : Jungyu Kim
 
 # Layout configuration
-  logo_path                  : "assets/img/dactl.svg" # path to logo file
+  logo_path                  :  # path to logo file
   search_path                : "jgtonys.github.io"
                                # needed for searchbox in archive page
   hero_layout                : true # turn on hero layout for blog and posts
