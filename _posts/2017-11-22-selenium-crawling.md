@@ -59,14 +59,14 @@ PhantomJS는 <http://phantomjs.org/download.html>에서 다운받을 수 있고,
 1. Webdriver import
 2. 브라우저를 제어하는 PhantomJS driver 만들기
 3. URL에 해당하는 페이지 소스 가져오기<br><br>
-```python
+~~~python
 from selenium import webdriver
 
 # phantomjs가 설치되어있지 않은 경우(드라이버 파일 다운로드인 경우)
 driver = webdriver.PhantomJS('다운로드받은위치/phantomjs')
 # phantomjs가 설치되어있는 경우
 driver = webdriver.PhantomJS()
-```
+~~~
 
 <br>
 Selenium Webdriver를 사용하자
