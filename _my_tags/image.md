@@ -1,4 +1,0 @@
----
-slug: image
-name: image
----
