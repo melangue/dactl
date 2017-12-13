@@ -17,7 +17,7 @@ I've split dactl's `_config.yml` into two parts. First part should be configured
 
 Let's go through each line in the first, configurable part:
 
-```yaml
+~~~yaml
 # Base blog settings
 blog:
   title                      : dactl
@@ -39,19 +39,22 @@ load_google_fonts            : 'Rubik:400,400italic,700,700italic'
 
 # Author info
 author:
-  fullname                  : Name Surname
-  rss                       : yes # or false
+  fullname                  : Your Name
+  rss                       : true # generate RSS feed and show it's icon in header
   mail                      : your@email.com # change to your e-mail address
-  # disqus: your_disqus_forum_shortname
-  photo                     : "assets/img/me2.png"
-  photo2x                   : "assets/img/me.png"
-
-# google_analytics: 'UA-XXXXXXXX-X'
+  twitter                   : twitter-user-name
+  github                    : github-user-name
+  youtube                   : youtube-user-name
+  stackoverflow             : stackoverflow-user-name
+  disqus                    : dactl # your disqus site name
+  google_analytics          : # 'UA-XXXXXXXX-X'
+  photo                     : "uploads/me2.png"
+  photo2x                   : "uploads/me.png"
 
 baseurl                      : "/dactl/" # the subpath of your site, e.g. /blog/, set to '' in case of hosting on GitHub pages
                                   # i.e. `http://<username>.github.io`
 url                          : "" # the base hostname & protocol for your site
-```
+~~~
 
 ## Base blog settings
 * `title` - title of your blog, both in `<title>` tag and in the header.
@@ -75,7 +78,11 @@ In order to change the font you need to supply it's name and variants - font wei
 * `fullname` - Your name and surname or nick, used throughout the blog.
 * `rss` - true or false - Turn the RSS feeds on or off.
 * `mail` - Your e-mail address.
-* `disqus` - Your Disqus forum shortname.
+* `twitter` - Your twitter username
+* `github` - Your Github username
+* `youtube` - Your YouTube username
+* `stackoverflow` - Your Stackoverflow username
+* `disqus` - Your Disqus site name.
 * `photo` - Avatar or photo of you, used on About page.
 * `photo2x` - Same as above but in higher resolution.
 

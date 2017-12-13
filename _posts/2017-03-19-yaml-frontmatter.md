@@ -16,7 +16,7 @@ In order to use dactl's post images with overlays you'll need to learn how to se
 Each Jekyll post starts with YAML Front [^1]. For example, this is how this post would look like if I wanted to use all of the options:
 <!–-break-–>
 
-```yaml
+~~~yaml
 ---
 layout: post
 title: 'How do I write posts in dactl Jekyll theme?'
@@ -27,7 +27,7 @@ hero: /assets/hero.jpg
 overlay: purple
 link: https://link-to-some-page.com
 ---
-```
+~~~
 
 As you can see it has a couple of options, some of them are required by Jekyll (layout, title), some are required by dactl theme when set to default hero layout (hero) and some are completely optional (overlay, link).  
 I'll go through what each option means, what it affects and how to use it.
@@ -59,7 +59,7 @@ hero: /assets/hero.jpg
 ```
 
 ### Hero overlay
-You can choose the color of the image overlay here. 
+You can choose the color of the image overlay here.
 Currently you can choose from five colors: purple, red, green, blue, orange.
 If you don't choose a color it will default to a light black.
 ```yaml
