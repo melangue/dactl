@@ -35,20 +35,17 @@ Html 에서 Object tag를 이용해 svg file을 로드해서 이벤트를 테스
 		
 		background.addEventListener("click", function(){
 			console.log('mouse move');
-			$('body').append('<p>마우스 클릭</p>');
-			alert('클릭');
+			$('.post').append('<p>마우스 클릭</p>');
 		});
 		
 		background.addEventListener("mousemove", function(){
 			console.log('mouse move');
-			$('body').append('<p>마우스 움직임</p>');
-			alert('움직임');
+			$('.post').append('<p>마우스 움직임</p>');
 		});
 		
 		background.addEventListener("SVGScroll", function(){
 			console.log('SVGScroll');
-			$('body').append('<p>마우스 스크롤</p>');
-			alert('스크롤');
+			$('.post').append('<p>마우스 스크롤</p>');
 		});
 		
 	});
