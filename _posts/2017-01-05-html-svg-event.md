@@ -10,12 +10,11 @@ overlay: red
 published: true
 
 ---
+Html 에서 Object tag를 이용해 svg file을 로드해서 이벤트를 테스트
+<!–-break-–>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
-
-Html 에서 Object tag를 이용해 svg file을 로드해서 이벤트를 테스트
-<!–-break-–>
 
 <script>
 	var arr = [
