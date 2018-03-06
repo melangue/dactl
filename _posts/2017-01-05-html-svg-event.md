@@ -5,7 +5,7 @@ tags:
   - svg
   - event
   - test
-hero: https://source.unsplash.com/collection/430471/
+hero: /../assets/img/test/background.png
 overlay: red
 published: true
 
@@ -26,10 +26,8 @@ Html 에서 Object tag를 이용해 svg file을 로드해서 이벤트를 테스
 	var arrIdx = 0; 
 	$( window ).on( "load", function() {
 		var object  = document.getElementById("svgObj");
-		console.log(object);
 		var svgDoc = object.contentDocument;
 		var background = svgDoc.getElementById("background");
-		console.log(background);
 		
 		background.setAttribute("fill", "yellow");
 		
@@ -39,12 +37,10 @@ Html 에서 Object tag를 이용해 svg file을 로드해서 이벤트를 테스
 		});
 		
 		background.addEventListener("mousemove", function(){
-			console.log('mouse move');
 			$('.post').append('<p>마우스 움직임</p>');
 		});
 		
 		background.addEventListener("SVGScroll", function(){
-			console.log('SVGScroll');
 			$('.post').append('<p>마우스 스크롤</p>');
 		});
 		
