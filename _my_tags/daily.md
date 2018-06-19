@@ -1,0 +1,4 @@
+---
+slug: daily
+name: daily
+---
