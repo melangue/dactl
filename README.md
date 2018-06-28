@@ -51,7 +51,7 @@ Your new dactl-themed Jekyll blog should be up and running at yourusername.githu
 ## Usage
 ### Slight warning
 dactl relies heavily on modern CSS properties such as [mix-blend-mode](http://www.w3.org/TR/compositing-1/#mix-blend-mode), [-webkit-filter](http://www.w3.org/TR/filter-effects-1/) and [css variables](https://drafts.csswg.org/css-variables/) so it may not work properly on older browsers.  
-It was tested with and works fully on webkit-powered browsers - Safari, Chrome, Vivald.
+It was tested with and works fully on webkit-powered browsers - Safari, Chrome, Vivaldi.
 
 ### Layout configurations
 By default dactl uses blog layout which you can see below or check for yourself in the live version.
