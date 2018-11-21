@@ -10,7 +10,7 @@ overlay: red
 published: true
 
 ---
-Html 에서 Object tag를 이용해 svg file을 로드해서 이벤트를 테스트
+마우스 휠 이벤트 입력 테스트
 <!–-break-–>
 
 <script>
