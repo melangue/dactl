@@ -163,5 +163,5 @@ SVG 이벤트 touchstart와 touchend 를 이용해 만든 swpie 함수 테스트
 	
 </script>
 
-<object id="svgObj" width="800" height="600"  type="image/svg+xml" data="{{ site.url }}/assets/resources/file/ARS2018299914467.svg" ></object>
+<object id="svgObj" width="800" height="600"  type="image/svg+xml" data="/../assets/resources/file/ARS2018299914467.svg" ></object>
 <h1 id="result">스와이프를 해주세요.</h1>

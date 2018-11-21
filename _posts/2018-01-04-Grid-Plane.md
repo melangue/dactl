@@ -18,7 +18,7 @@ Threejs grid plane example test
 <script src="/../assets/threejs/js/controls/TransformControls.js"></script>
 <script src="/../assets/threejs/js/controls/OrbitControls.js"></script>
 <script src="/../assets/threejs/js/libs/dat.gui.min.js"></script>
-//처리
+
 <style type="text/css">
 #threejsView > div > canvas{
 	width:100% !important;

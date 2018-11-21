@@ -87,4 +87,4 @@ Html으로 불러온 svg에서 svg관련 event가 동작하는지 테스트
 	}
 </style>
 
-<object id="svgObj" width="100%" height="600"  type="image/svg+xml" data="{{ site.url }}/assets/resources/file/ARS2018299914467.svg" ></object>
+<object id="svgObj" width="100%" height="600"  type="image/svg+xml" data="/../assets/resources/file/ARS2018299914467.svg" ></object>
