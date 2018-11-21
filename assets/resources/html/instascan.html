@@ -3,32 +3,30 @@
 <head>
 <title>Instascan</title>
 <script type="text/javascript" src="../lib/instascan/instascan.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 </head>
 <body>
 	<video id="preview"></video>
 	<script type="text/javascript">
-    	let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
-      		let div = document.getElementById('print');
-
-      		scanner.addListener('scan', function (content) {
-        		console.log(content);
-        		
-        		div.innerHTML += '스캔 콘텐츠:' + content;
-      		});
-      		
-      		Instascan.Camera.getCameras().then(function (cameras) {
-	        	if (cameras.length > 0) {
-	          		scanner.start(cameras[0]);
-	       
-	          		div.innerHTML += '카메라 수:' + cameras.length;
-	          		
-	        	} else {
-	          		console.error('No cameras found.');
-	        	}
-	      	}).catch(function (e) {
-	        	console.error(e);
-	      	});
+    let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+    scanner.addListener('scan', function (content) {
+    	console.log(content);
+    });
+      
+    Instascan.Camera.getCameras().then(function (cameras) {
+    
+    	if (cameras.length > 0) {
+        	scanner.start(cameras[0]);
+        } else {
+        	console.error('No cameras found.');
+        }
+    }).catch(function (e) {
+        console.error(e);
+    });
+    
+    $('#print', parent.document).append('접근했다.');
     </script>
-    <div id="print"></div>
+    
+    <!-- <article class="post"> -->
 </body>
 </html>
