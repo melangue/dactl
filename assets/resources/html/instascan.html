@@ -8,26 +8,27 @@
 	<video id="preview"></video>
 	<script type="text/javascript">
     	let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
-      	
-    	scanner.addListener('scan', function (content) {
-        	console.log(content);
-        	alert(content);
-      	});
-      	
-      	Instascan.Camera.getCameras().then(function (cameras) {
-        	if (cameras.length > 0) {
-          		scanner.start(cameras[1]);
-  				for(let i=0; i<cameras.length; ++i){
-  					let str = '';
-  					str += '<p>' + cameras[i].id + '</p>';
-  					document.body.innerHTML += str;
-  				}
-        	} else {
-          		console.error('No cameras found.');
-        	}
-      }).catch(function (e) {
-      	console.error(e);
-      });
+      		let div = document.getElementById('print');
+
+      		scanner.addListener('scan', function (content) {
+        		console.log(content);
+        		
+        		div.innerHTML += '스캔 콘텐츠:' + content;
+      		});
+      		
+      		Instascan.Camera.getCameras().then(function (cameras) {
+	        	if (cameras.length > 0) {
+	          		scanner.start(cameras[0]);
+	       
+	          		div.innerHTML += '카메라 수:' + cameras.length;
+	          		
+	        	} else {
+	          		console.error('No cameras found.');
+	        	}
+	      	}).catch(function (e) {
+	        	console.error(e);
+	      	});
     </script>
+    <div id="print"></div>
 </body>
 </html>
