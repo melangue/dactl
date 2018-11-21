@@ -3,7 +3,7 @@ layout: post
 title:  "Grid Plane"
 tags:
   - Threejs
-hero: /../assets/threejs/screenshot/gridPlane.png
+hero: /../assets/resources/lib/threejs/screenshot/gridPlane.png
 overlay: red
 published: true
 
@@ -12,12 +12,12 @@ Threejs grid plane example test
 <!–-break-–>
 
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="/../assets/threejs/build/three.js"></script>
-<script type="text/javascript" src="/../assets/threejs/js/Detector.js"></script>
-<script type="text/javascript" src="/../assets/threejs/js/libs/stats.min.js"></script>
-<script src="/../assets/threejs/js/controls/TransformControls.js"></script>
-<script src="/../assets/threejs/js/controls/OrbitControls.js"></script>
-<script src="/../assets/threejs/js/libs/dat.gui.min.js"></script>
+<script type="text/javascript" src="/../assets/resources/lib/threejs/build/three.js"></script>
+<script type="text/javascript" src="/../assets/resources/lib/threejs/js/Detector.js"></script>
+<script type="text/javascript" src="/../assets/resources/lib/threejs/js/libs/stats.min.js"></script>
+<script src="/../assets/resources/lib/threejs/js/controls/TransformControls.js"></script>
+<script src="/../assets/resources/lib/threejs/js/controls/OrbitControls.js"></script>
+<script src="/../assets/resources/lib/threejs/js/libs/dat.gui.min.js"></script>
 
 <style type="text/css">
 #threejsView > div > canvas{
@@ -70,7 +70,7 @@ Threejs grid plane example test
 		var geometry = new THREE.PlaneBufferGeometry(1000, 1000);
 		geometry.rotateX(-Math.PI/2);
 		//박스 생성
-		var boxTexture = new THREE.TextureLoader().load('/../assets/threejs/textures/crate.gif');		//박스 텍스쳐 가져오기 
+		var boxTexture = new THREE.TextureLoader().load('/../assets/resources/lib/threejs/textures/crate.gif');		//박스 텍스쳐 가져오기 
 		var boxGeometry = new THREE.BoxBufferGeometry(200, 200, 200);																						//박스 지오메트리
 		var boxMaterial  = new THREE.MeshBasicMaterial({map:boxTexture});																				//박스 메터리얼
 		boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);

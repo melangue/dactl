@@ -35,7 +35,7 @@ published: true
 </div>
 
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="/../assets/slider/js/jquery.slides.min.js"></script>
+<script src="/../assets/resources/lib/slider/js/jquery.slides.min.js"></script>
 <script>
 	$(function() {
 		$('#slides').slidesjs({
@@ -62,6 +62,6 @@ published: true
 </ol>
 
 <figure>
-	<iframe width="100%" src="https://www.youtube.com/embed/x79gUNFlBBE" frameborder="0" allowfullscreen></iframe>
+	<iframe width="420" height="315" src="https://www.youtube.com/embed/x79gUNFlBBE" frameborder="0" allowfullscreen></iframe>
  	<figcaption>패스빌(Passville) 구동</figcaption>   
 </figure>
