@@ -12,12 +12,12 @@ Threejs grid plane example test
 <!–-break-–>
 
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="{{ site.url }}/assets/threejs/build/three.js"></script>
-<script type="text/javascript" src="{{ site.url }}/assets/threejs/js/Detector.js"></script>
-<script type="text/javascript" src="{{ site.url }}/assets/threejs/js/libs/stats.min.js"></script>
-<script src="{{ site.url }}/assets/threejs/js/controls/TransformControls.js"></script>
-<script src="{{ site.url }}/assets/threejs/js/controls/OrbitControls.js"></script>
-<script src="{{ site.url }}/assets/threejs/js/libs/dat.gui.min.js"></script>
+<script type="text/javascript" src="/../assets/threejs/build/three.js"></script>
+<script type="text/javascript" src="/../assets/threejs/js/Detector.js"></script>
+<script type="text/javascript" src="/../assets/threejs/js/libs/stats.min.js"></script>
+<script src="/../assets/threejs/js/controls/TransformControls.js"></script>
+<script src="/../assets/threejs/js/controls/OrbitControls.js"></script>
+<script src="/../assets/threejs/js/libs/dat.gui.min.js"></script>
 //처리
 <style type="text/css">
 #threejsView > div > canvas{
@@ -70,7 +70,7 @@ Threejs grid plane example test
 		var geometry = new THREE.PlaneBufferGeometry(1000, 1000);
 		geometry.rotateX(-Math.PI/2);
 		//박스 생성
-		var boxTexture = new THREE.TextureLoader().load('{{ site.url }}/assets/threejs/textures/crate.gif');		//박스 텍스쳐 가져오기 
+		var boxTexture = new THREE.TextureLoader().load('/../assets/threejs/textures/crate.gif');		//박스 텍스쳐 가져오기 
 		var boxGeometry = new THREE.BoxBufferGeometry(200, 200, 200);																						//박스 지오메트리
 		var boxMaterial  = new THREE.MeshBasicMaterial({map:boxTexture});																				//박스 메터리얼
 		boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
