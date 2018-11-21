@@ -9,12 +9,14 @@
 	<video id="preview"></video>
 	<script type="text/javascript">
     let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+    let print =  $('#print', window.parent.document);
+    let cameraArr = [];
     scanner.addListener('scan', function (content) {
     	console.log(content);
     });
       
     Instascan.Camera.getCameras().then(function (cameras) {
-    
+    	cameraArr = cameras;
     	if (cameras.length > 0) {
         	scanner.start(cameras[0]);
         } else {
@@ -24,7 +26,12 @@
         console.error(e);
     });
     
-    $('#print', window.parent.document).append('접근했다.');
+    for(let i=0; i<cameraArr.length; ++i){
+    	let camera = cameraArr[i];
+    	let str = '<div>카메라 '+i+'번:'+camera.id+'</div>'; 
+    	print.append(str);
+    }
+    
     </script>
     
     <!-- <article class="post"> -->
