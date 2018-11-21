@@ -5,7 +5,7 @@ tags:
   - svg
   - event
   - test
-hero: /../assets/img/test/background.png
+hero: /../assets/resources/img/test/background.png
 overlay: red
 published: true
 

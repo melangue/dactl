@@ -4,7 +4,7 @@ title:  "Arjs Basic"
 tags:
   - Portfolio
 hero: /../assets/resources/img/ar/arCntentsPreview.png
-overlay: red
+overlay: purple
 published: true
 
 ---

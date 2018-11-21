@@ -4,7 +4,7 @@ title:  "Passville"
 tags:
   - Portfolio
 hero: /../assets/resources/img/pass/img4.png
-overlay: red
+overlay: orange
 published: true
 
 ---
@@ -23,7 +23,6 @@ published: true
 		<img src="/../assets/resources/img/pass/img8.png" alt="8">
 		<img src="/../assets/resources/img/pass/img9.png" alt="9">
 		<img src="/../assets/resources/img/pass/img10.png" alt="10">
-		<img src="/../assets/resources/img/pass/img11.png" alt="11">
 		<img src="/../assets/resources/img/pass/img12.png" alt="12">
 		<img src="/../assets/resources/img/pass/img13.png" alt="13">
 		<img src="/../assets/resources/img/pass/img14.png" alt="14">
