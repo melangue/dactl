@@ -11,6 +11,8 @@ published: true
 Instascan.js 구동시켜 보기 
 <!–-break-–>
 <script type="text/javascript" src="/../assets/resources/lib/instascan/instascan.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
 <video id="preview"></video>
 <script type="text/javascript">
 	let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
@@ -18,15 +20,16 @@ Instascan.js 구동시켜 보기
     	console.log(content);
   	});
   	Instascan.Camera.getCameras().then(function (cameras) {
+		alert('카메라 수 :' + cameras.length);
 	    if (cameras.length > 0) {
-	      scanner.start(cameras[0]);
+	    	scanner.start(cameras[0]);
 	    } else {
-	      console.error('No cameras found.');
+	    	console.error('No cameras found.');
 	    }
 	}).catch(function (e) {
 	    console.error(e);
 	});
-	console.log(scanner);
-	window.InstaScan = scanner;
+	
 </script>
+<div id="print"></div>
 
