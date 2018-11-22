@@ -17,12 +17,12 @@ Instascan.js 구동시켜 보기
 <script type="text/javascript">
 	let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
   	scanner.addListener('scan', function (content) {
-    	console.log(content);
+    	$('#print').empty();
+    	$('#print').empty('Scanning content: '+content);
   	});
   	Instascan.Camera.getCameras().then(function (cameras) {
-		alert('카메라 수 :' + cameras.length);
 	    if (cameras.length > 0) {
-	    	scanner.start(cameras[0]);
+	    	scanner.start(cameras[1]);
 	    } else {
 	    	console.error('No cameras found.');
 	    }
