@@ -7,7 +7,20 @@
 <body>
 	<video id="preview"></video>
 	<script type="text/javascript">
-    let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+	var InstaScan = function(){
+		this.scanner = null;		
+	}
+	
+	InstaScan.prototype = {
+		getScanner : function(){
+			return this.scanner;
+		}, 
+		setScanner : function(scanner){
+			this.scanner = scanner;
+		}
+	}
+	
+	let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
     scanner.addListener('scan', function (content) {
     	console.log(content);
     });
@@ -23,8 +36,9 @@
         console.log(e);
     });
     </script>
-    
-   	window.parent.InstaScan = scanner;
+    var instaScan = new InstaScan();
+	instaScan.setScanner(scanner);
+   	window.parent.instaScan = instaScan;
    	
 </body>
 </html>
