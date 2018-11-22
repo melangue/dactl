@@ -42,7 +42,7 @@
     			this.activeCameraId = this.cameras[0].id;
     			this.scanner.start(this.cameras[0]);
     		}, 
-    		printScanData(content) : function(){
+    		printScanData : function(content){
     			$('#print', window.parent.document).append('<div>스캔 내용:'+content+'</div>');
     		}
     }
