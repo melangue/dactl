@@ -8,25 +8,51 @@
 <body>
 	<video id="preview"></video>
 	<script type="text/javascript">
-    let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
-    var cameraArr = [];
-    var myCamera = {};
-    scanner.addListener('scan', function (content) {
-    	console.log(content);
-    });
-      
-    Instascan.Camera.getCameras().then(function (cameras) {
-    	$('#print', window.parent.document).append('<div>카메라 생성</div>');
-    	if (cameras.length > 0) {
-        	scanner.start(cameras[0]);
-        	$('#print', window.parent.document).append('<div>카메라 수:'+cameras.length+'</div>');
-        } else {
-        	console.error('No cameras found.');
-        }
-    }).catch(function (e) {
-        console.error(e);
-    });
-
+    
+	var InstaScan = function(){
+		this.activeCameraId = null; 		
+		this.cameras = [];
+		this.scans = []
+		this.scanner = null;		
+	}
+	
+    InstaScan.prototype = {
+    		printCameraNumber : function(value){
+    			$('#print', window.parent.document).append('<div>카메라 수:'+this.cameras.length+'</div>');
+    		},
+    		createCamera : function (){
+    			Instascan.Camera.getCameras().then(function (cameras) {
+	    			this.cameras = cameras;
+	    		}).catch(function (e) {
+    			    console.error(e);
+    			});
+    		}, 
+    		createScaner : function (){
+    			let self = this;
+    			this.scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+    			this.scanner.addListener('scan', function (content) {
+    			    self.printScanData(content);
+    			});
+    		},
+    		startScan : function(){
+    			this.activeCameraId = this.cameras[0].id;
+    			this.scanner.start(this.cameras[0]);
+    		},
+    		selectCamera : function(camera){
+    			this.activeCameraId = this.cameras[0].id;
+    			this.scanner.start(this.cameras[0]);
+    		}, 
+    		printScanData(content) : function(){
+    			$('#print', window.parent.document).append('<div>스캔 내용:'+content+'</div>');
+    		}
+    }
+    
+    var instaScan = new InstaScan();
+    instaScan.createCamera();
+    instaScan.createScaner();
+    instaScan.startScan();
+    
+	window.parent.Flag = instaScan;
     
     $('#print', window.parent.document).append('<div>종료</div>');
 
