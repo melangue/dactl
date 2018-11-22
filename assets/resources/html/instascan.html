@@ -16,29 +16,17 @@
     });
       
     Instascan.Camera.getCameras().then(function (cameras) {
-    	cameraArr = cameras;
+    	$('#print', window.parent.document).append('<div>카메라 생성</div>');
     	if (cameras.length > 0) {
         	scanner.start(cameras[0]);
-        	myCamera.cameras = cameras;
+        	$('#print', window.parent.document).append('<div>카메라 수:'+cameras.length+'</div>');
         } else {
         	console.error('No cameras found.');
         }
     }).catch(function (e) {
         console.error(e);
     });
-    
-    $('#print', window.parent.document).append('<div>카메라 수:'+cameraArr.length+'</div>');
-    $('#print', window.parent.document).append('<div>객체 카메라 수:'+myCamera.cameras.length+'</div>');
-    
-    for(let i=0; i<cameraArr.length; ++i){
-    	let c = cameraArr[i];
-    	$('#print', window.parent.document).append('<div>카메라 아이디:'+c.id+'</div>');
-    }
-    
-    for(let i=0; i<myCamera.cameras.length; ++i){
-    	let c = myCamera.cameras[i];
-    	$('#print', window.parent.document).append('<div>객체 카메라 아이디:'+c.id+'</div>');
-    }
+
     
     $('#print', window.parent.document).append('<div>종료</div>');
 
