@@ -3,62 +3,28 @@
 <head>
 <title>Instascan</title>
 <script type="text/javascript" src="../lib/instascan/instascan.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 </head>
 <body>
 	<video id="preview"></video>
 	<script type="text/javascript">
+    let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+    scanner.addListener('scan', function (content) {
+    	console.log(content);
+    });
+      
+    Instascan.Camera.getCameras().then(function (cameras) {
     
-	var InstaScan = function(){
-		this.activeCameraId = null; 		
-		this.cameras = [];
-		this.scans = []
-		this.scanner = null;		
-	}
-	
-    InstaScan.prototype = {
-    		printCameraNumber : function(value){
-    			$('#print', window.parent.document).append('<div>카메라 수:'+this.cameras.length+'</div>');
-    		},
-    		
-    		createCamera : function (){
-    			Instascan.Camera.getCameras().then(function (cameras) {
-	    			this.cameras = cameras;
-	    			this.activeCameraId = cameras[0].id;
-	    			this.scanner.start(cameras[0]);
-	    		}).catch(function (e) {
-    			    console.log(e);
-    			});
-    		}, 
-    		
-    		createScaner : function (){
-    			let self = this;
-    			this.scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
-    			this.scanner.addListener('scan', function (content) {
-    			    self.printScanData(content);
-    			});
-    		},
-
-    		selectCamera : function(camera){
-    			this.activeCameraId = this.cameras[0].id;
-    			this.scanner.start(this.cameras[0]);
-    		}, 
-    		
-    		printScanData : function(content){
-    			$('#print', window.parent.document).append('<div>스캔 내용:'+content+'</div>');
-    		}
-    }
-    
-    var instaScan = new InstaScan();
-    instaScan.createScaner();
-    instaScan.createCamera();
-   
-	window.parent.Flag = instaScan;
-    
-    $('#print', window.parent.document).append('<div>종료</div>');
-
+    	if (cameras.length > 0) {
+        	scanner.start(cameras[0]);
+        } else {
+        	console.error('No cameras found.');
+        }
+    }).catch(function (e) {
+        console.error(e);
+    });
     </script>
     
-    
+   	window.parent.InstaScan = scanner;
+   	
 </body>
 </html>
