@@ -20,13 +20,17 @@
     		printCameraNumber : function(value){
     			$('#print', window.parent.document).append('<div>카메라 수:'+this.cameras.length+'</div>');
     		},
+    		
     		createCamera : function (){
     			Instascan.Camera.getCameras().then(function (cameras) {
 	    			this.cameras = cameras;
+	    			this.activeCameraId = cameras[0].id;
+	    			this.scanner.start(cameras[0]);
 	    		}).catch(function (e) {
-    			    console.error(e);
+    			    console.log(e);
     			});
     		}, 
+    		
     		createScaner : function (){
     			let self = this;
     			this.scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
@@ -34,22 +38,20 @@
     			    self.printScanData(content);
     			});
     		},
-    		startScan : function(){
-    			this.activeCameraId = this.cameras[0].id;
-    			this.scanner.start(this.cameras[0]);
-    		},
+
     		selectCamera : function(camera){
     			this.activeCameraId = this.cameras[0].id;
     			this.scanner.start(this.cameras[0]);
     		}, 
+    		
     		printScanData : function(content){
     			$('#print', window.parent.document).append('<div>스캔 내용:'+content+'</div>');
     		}
     }
     
     var instaScan = new InstaScan();
-    instaScan.createCamera();
     instaScan.createScaner();
+    instaScan.createCamera();
     instaScan.startScan();
     
 	window.parent.Flag = instaScan;
