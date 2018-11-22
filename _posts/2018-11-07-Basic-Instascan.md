@@ -15,8 +15,8 @@ Instascan.js 구동시켜 보기
 
 <video id="preview"></video>
 <script type="text/javascript">
-	let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
-  	scanner.addListener('scan', function (content) {
+	let scanner = new Instascan.Scanner({ video: document.getElementById('preview'),  scanPeriod: 5 });
+  	scanner.addListener('scan', function (content, image) {
     	$('#print').empty();
     	$('#print').empty('Scanning content: '+content);
   	});
