@@ -20,7 +20,17 @@
 		}
 	}
 	
-	let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+	let opts = {
+		continuous: true,
+		video: document.getElementById('preview'),
+		mirror: true,
+		captureImage: false,
+		backgroundScan: true,
+		refractoryPeriod: 5000,
+		scanPeriod: 1
+	};
+	
+	let scanner = new Instascan.Scanner(opts);
     scanner.addListener('scan', function (content) {
     	console.log(content);
     });
