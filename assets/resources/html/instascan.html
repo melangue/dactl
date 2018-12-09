@@ -7,19 +7,6 @@
 <body>
 	<video id="preview"></video>
 	<script type="text/javascript">
-	var InstaScan = function(){
-		this.scanner = null;		
-	}
-	
-	InstaScan.prototype = {
-		getScanner : function(){
-			return this.scanner;
-		}, 
-		setScanner : function(scanner){
-			this.scanner = scanner;
-		}
-	}
-	
 	let opts = {
 		continuous: true,
 		video: document.getElementById('preview'),
@@ -34,21 +21,15 @@
     scanner.addListener('scan', function (content) {
     	console.log(content);
     });
-      
     Instascan.Camera.getCameras().then(function (cameras) {
-    
     	if (cameras.length > 0) {
         	scanner.start(cameras[0]);
         } else {
         	console.error('No cameras found.');
         }
     }).catch(function (e) {
-        console.log(e);
+    	console.error(e);
     });
-    </script>
-    var instaScan = new InstaScan();
-	instaScan.setScanner(scanner);
-   	window.parent.InstaScan = instaScan;
-   	
+    </script>	
 </body>
 </html>
