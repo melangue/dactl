@@ -3,6 +3,13 @@
 <head>
 <title>Instascan</title>
 <script type="text/javascript" src="../lib/instascan/instascan.min.js"></script>
+<style type="text/css">
+#preview{
+	transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+}
+</style>
 </head>
 <body>
 	<video id="preview"></video>
@@ -10,7 +17,7 @@
 	let opts = {
 		continuous: true,
 		video: document.getElementById('preview'),
-		mirror: true,
+		mirror: false,
 		captureImage: false,
 		backgroundScan: true,
 		refractoryPeriod: 5000,
