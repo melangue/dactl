@@ -13,3 +13,10 @@ Instascan.js 구동시켜 보기
 
 <iframe width="100%" height="500px;" src="/../assets/resources/html/instascan.html"></iframe>
 
+<button id="onInstascan">켜기</button> 
+<button id="offInstascan">끄기</button>
+
+<div id="readView">
+## 읽어드린 정보
+</div>
+
