@@ -29,10 +29,10 @@
 	//스케너 객체 
 	let scanner = new Instascan.Scanner(opts);
    
-	/*  scanner.addListener('scan', function (content) {
+	scanner.addListener('scan', function (content) {
+    	alert(content);
     	$("#readView" , parent.document).append(content);
-    	console.log(content);
-    }); */
+    }); 
     
     //스케너 켜기
     function onCamera () {
@@ -59,11 +59,11 @@
     function readContent (){
     	
     	var content = scanner.scan();
-    	alert(content);
+    	//alert(content);
 
-    	var parentDiv = parent.getElementById("readView");
+    	/* var parentDiv = parent.getElementById("readView");
     	var contentText = document.createTextNode(content);
-    	parentDivappendChild(contentText);
+    	parentDivappendChild(contentText); */
     	
     	console.log('read content!');
     }
