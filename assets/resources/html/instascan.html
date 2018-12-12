@@ -25,10 +25,10 @@
 	};
 	
 	let scanner = new Instascan.Scanner(opts);
-    scanner.addListener('scan', function (content) {
+   /*  scanner.addListener('scan', function (content) {
     	$("#readView" , parent.document).append(content);
     	console.log(content);
-    });
+    }); */
     
     function onCamera () {
     	Instascan.Camera.getCameras().then(function (cameras) {
@@ -47,6 +47,12 @@
     function offCamera () {
     	scanner.stop();
     	console.log('camera stop!');
+    }
+    
+    function readContent (){
+    	var content = scanner.scan();
+    	$("#readView" , parent.document).append(content);
+    	console.log('read content!');
     }
     
     </script>	
