@@ -59,8 +59,12 @@
     function readContent (){
     	
     	var content = scanner.scan();
-    	parent.$('#readView').append(content);
     	alert(content);
+
+    	var parentDiv = parent.getElementById("readView");
+    	var contentText = document.createTextNode(content);
+    	parentDivappendChild(contentText);
+    	
     	console.log('read content!');
     }
     
