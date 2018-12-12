@@ -14,6 +14,8 @@
 <body>
 	<video id="preview"></video>
 	<script type="text/javascript">
+	
+	//옵션
 	let opts = {
 		continuous: true,
 		video: document.getElementById('preview'),
@@ -24,12 +26,15 @@
 		scanPeriod: 1
 	};
 	
+	//스케너 객체 
 	let scanner = new Instascan.Scanner(opts);
-   /*  scanner.addListener('scan', function (content) {
+   
+	/*  scanner.addListener('scan', function (content) {
     	$("#readView" , parent.document).append(content);
     	console.log(content);
     }); */
     
+    //스케너 켜기
     function onCamera () {
     	Instascan.Camera.getCameras().then(function (cameras) {
         	if (cameras.length > 0) {
@@ -44,15 +49,17 @@
     	console.log('camera start!');
     };
     
+    //스케너 끄기
     function offCamera () {
     	scanner.stop();
     	console.log('camera stop!');
     }
     
+    //읽기
     function readContent (){
     	var content = scanner.scan();
-    	$("#readView" , parent.document).append(content);
-    	console.log('read content!');
+    	parent.$('#readView').append(content);
+    	alert.log('read content!');
     }
     
     </script>	
