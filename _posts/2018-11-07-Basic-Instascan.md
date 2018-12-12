@@ -32,7 +32,10 @@ function offInstascan (){
 
 function readInstascan (){
 	console.log('읽기');
+	var istIframe = document.getElementById('instascanIframe');
+	istIframe.contentWindow.readContent();
 }
+
 </script>
 
 <div id="readView">

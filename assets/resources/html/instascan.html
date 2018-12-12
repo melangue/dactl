@@ -57,11 +57,12 @@
     
     //읽기
     function readContent (){
-    	window.parent.alert.log('read start!');
+    	parent.alert('read start!');
+    	window.parent.alert('read2 start!');
+    	
     	var content = scanner.scan();
-    	window.parent.$('#readView').append(content);
-    	window.parent.alert.log('read:'+content);
-    	window.parent.alert.log('read content!');
+    	parent.$('#readView').append(content);
+    	console.log('read content!');
     }
     
     </script>	
