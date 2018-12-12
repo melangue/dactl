@@ -11,7 +11,7 @@ published: true
 Instascan.js 구동시켜 보기 
 <!–-break-–>
 
-<iframe width="100%" height="500px;" src="/../assets/resources/html/instascan.html"></iframe>
+<iframe id="instascanIframe" width="100%" height="500px;" src="/../assets/resources/html/instascan.html"></iframe>
 
 <button id="onBtn" onClick="onInstascan();">켜기</button> 
 <button id="offBtn" onClick="offInstascan();">끄기</button>
@@ -20,10 +20,14 @@ Instascan.js 구동시켜 보기
 <script type="text/javascript">
 function onInstascan (){
 	console.log('켜기');
+	var istIframe = document.getElementById('instascanIframe');
+	istIframe.contentWindow.onCamera();
 }
 
 function offInstascan (){
 	console.log('끄기');
+	var istIframe = document.getElementById('instascanIframe');
+	istIframe.contentWindow.offCamera();
 }
 
 function readInstascan (){

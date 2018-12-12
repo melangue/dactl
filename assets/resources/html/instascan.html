@@ -26,18 +26,29 @@
 	
 	let scanner = new Instascan.Scanner(opts);
     scanner.addListener('scan', function (content) {
+    	$("#readView" , parent.document).append(content);
     	console.log(content);
     });
     
-    Instascan.Camera.getCameras().then(function (cameras) {
-    	if (cameras.length > 0) {
-        	scanner.start(cameras[1]);
-        } else {
-        	console.error('No cameras found.');
-        }
-    }).catch(function (e) {
-    	console.error(e);
-    });
+    function onCamera () {
+    	Instascan.Camera.getCameras().then(function (cameras) {
+        	if (cameras.length > 0) {
+            	scanner.start(cameras[1]);
+            } else {
+            	console.error('No cameras found.');
+            }
+        }).catch(function (e) {
+        	console.error(e);
+        });
+    	
+    	console.log('camera start!');
+    };
+    
+    function offCamera () {
+    	scanner.stop();
+    	console.log('camera stop!');
+    }
+    
     </script>	
 </body>
 </html>
