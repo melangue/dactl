@@ -30,8 +30,10 @@
 	let scanner = new Instascan.Scanner(opts);
    
 	scanner.addListener('scan', function (content) {
-    	alert(content);
-    	$("#readView" , parent.document).append(content);
+    	//alert(content);
+    	//$("#readView" , parent.document).append(content);
+    	var readView = parent.document.getElementById("readView");
+    	readView.innerHTML += "<div>"+content+"</div>";
     }); 
     
     //스케너 켜기
