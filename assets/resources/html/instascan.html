@@ -30,10 +30,13 @@
 	let scanner = new Instascan.Scanner(opts);
    
 	scanner.addListener('scan', function (content) {
-    	//alert(content);
-    	//$("#readView" , parent.document).append(content);
+    	
+		console.log("1");
+    	
     	var readView = parent.document.getElementById("readView");
     	readView.innerHTML += "<div>"+content+"</div>";
+    	
+    	return content; 
     }); 
     
     //스케너 켜기
@@ -61,13 +64,11 @@
     function readContent (){
     	
     	var content = scanner.scan();
-    	//alert(content);
-
-    	/* var parentDiv = parent.getElementById("readView");
-    	var contentText = document.createTextNode(content);
-    	parentDivappendChild(contentText); */
+		console.log("2");
+		
+		var readView = parent.document.getElementById("readView");
+    	readView.innerHTML += "<div>"+content+"</div>";
     	
-    	console.log('read content!');
     }
     
     
