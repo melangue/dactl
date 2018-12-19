@@ -35,8 +35,7 @@
     	
     	var readView = parent.document.getElementById("readView");
     	readView.innerHTML += "<div>"+content+"</div>";
-    	
-    	return content; 
+   
     }); 
     
     //스케너 켜기
@@ -63,11 +62,11 @@
     //읽기
     function readContent (){
     	
-    	var content = scanner.scan();
+    	var result = scanner.scan();
 		console.log("2");
 		
 		var readView = parent.document.getElementById("readView");
-    	readView.innerHTML += "<div>"+content+"</div>";
+    	readView.innerHTML += "<div>"+result.content+"</div>";
     	
     }
    
