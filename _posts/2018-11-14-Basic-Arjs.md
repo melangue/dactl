@@ -2,7 +2,7 @@
 layout: post
 title:  "Arjs Basic"
 tags:
-  - Portfolio
+  - Ar.js
 hero: /../assets/resources/img/ar/arCntentsPreview.png
 overlay: purple
 published: true

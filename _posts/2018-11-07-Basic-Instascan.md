@@ -2,7 +2,7 @@
 layout: post
 title:  "Basic Instascan"
 tags:
-  - Portfolio
+  - instascan
 hero: /../assets/resources/img/ar/arCntentsPreview.png
 overlay: red
 published: true
