@@ -66,9 +66,6 @@ published: true
       	<img src="/../assets/resources/img/pass/img10.png" alt="10">
       </div>
       <div class="swiper-slide">
-      	<img src="/../assets/resources/img/pass/img11.png" alt="11">
-      </div>
-      <div class="swiper-slide">
       	<img src="/../assets/resources/img/pass/img12.png" alt="12">
       </div>
       <div class="swiper-slide">
