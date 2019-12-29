@@ -48,13 +48,6 @@
             </a>
         </li>
         {% endif %}
-        {% if site.author.rss == true %}
-        <li>
-            <a href="{{ '/feed.xml' | prepend: site.baseurl }}" target="_blank">
-                <span class="icon-rss_feed"></span>
-            </a>
-        </li>
-        {% endif %}
         <li>
             <a href="#" onclick="switchTheme()" title="Switch theme?">
               <span class="icon-invert_colors" id="theme-switcher"></span>

@@ -34,7 +34,7 @@ author:
   # youtube                   : youtube-user-name
   # stackoverflow             : stackoverflow-user-name
   # disqus                    : dactl # your disqus site name
-  google_analytics          : # 'UA-XXXXXXXX-X'
+  google_analytics          : "UA-155093863-1"
   photo                     : "uploads/me2.jpg"
   photo2x                   : "uploads/me.jpg"
 
