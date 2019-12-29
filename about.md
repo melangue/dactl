@@ -35,12 +35,12 @@ From 2020, I am starting to plan out my year. Here are my plans for the year:
 
 - [ ] &nbsp; Pass Google Mobile Web specialist certification (first half).
 - [ ] &nbsp; Run a half marathon (first half).
-- [ ] &nbsp; Play a organized leather ball tournament.
+- [ ] &nbsp; Play an organized leather ball tournament.
 - [ ] &nbsp; Contribute to at least 1 machine learning codebase.
 - [ ] &nbsp; Contribute to 4+ open source react projects.
 - [ ] &nbsp; Contribute to 2+ open source typescript project. Declaration file, etc...
 - [ ] &nbsp; Write 1+ dart application.
-- [ ] &nbsp; Win a CP event, or score 1800+ rating on hackerEarth.
+- [ ] &nbsp; Top 20 in a CP event, or score 1800+ rating on hackerEarth.
 - [ ] &nbsp; Weekly tech blog, Bi-weekly life blog.
 - [ ] &nbsp; Montly Community give back. Its a small give back thing we were planning to start.
 - [ ] &nbsp; Obviously, better financial state.

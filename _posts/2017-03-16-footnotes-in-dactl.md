@@ -2,7 +2,7 @@
 layout: post
 title: Footnotes
 tags:
-  - dactl
+  - tech
   - howto
 hero: https://source.unsplash.com/collection/228632/
 overlay: red

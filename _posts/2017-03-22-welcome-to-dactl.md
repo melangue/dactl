@@ -2,8 +2,7 @@
 layout: post
 title:  "Welcome to dactl!"
 tags:
-  - dactl
-  - jekyll
+  - tech
 hero: https://source.unsplash.com/collection/430471/
 overlay: red
 published: true

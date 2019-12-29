@@ -2,8 +2,6 @@
 layout: post
 title: 'Layout settings and more in _config.yml'
 tags:
-  - jekyll
-  - dactl
   - howto
 hero: https://source.unsplash.com/collection/582860/
 overlay: red

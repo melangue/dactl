@@ -2,8 +2,7 @@
 layout: post
 title: 'Tags in dactl'
 tags:
-  - dactl
-  - howto
+  - life
 hero: https://source.unsplash.com/collection/427433/
 overlay: green
 ---
