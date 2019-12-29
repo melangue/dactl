@@ -14,6 +14,7 @@
 <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.blog.description }}{% endif %}">
 {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 {% if page.title %} {% assign title = page.title ~ ' - ' ~ page.subtitle %} {% else %} {% assign title = site.blog.title %} {% endif %}
 {% if page.description %} {% assign description = page.description %} {% else %} {% assign description = site.blog.description %} {% endif %}

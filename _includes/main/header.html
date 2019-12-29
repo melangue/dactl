@@ -20,10 +20,10 @@
             </a>
         </li>
         {% endif %}
-        {% if site.author.stackoverflow %}
+        {% if site.author.facebook %}
         <li>
-            <a href="https://stackoverflow.com/{{ site.author.stackoverflow }}" target="_blank" class="smaller">
-              <span class="icon-stackoverflow"></span>
+            <a href="https://www.facebook.com/{{ site.author.facebook }}" target="_blank" class="smaller">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i>
             </a>
         </li>
         {% endif %}
@@ -34,10 +34,24 @@
             </a>
         </li>
         {% endif %}
+        {% if site.author.linkedin %}
+        <li>
+            <a href="https://in.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" class="smaller">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+        </li>
+        {% endif %}
         {% if site.author.github %}
         <li>
             <a href="https://github.com/{{ site.author.github }}" target="_blank" class="smaller">
-              <span class="icon-github"></span>
+              <i class="fa fa-github-square" aria-hidden="true"></i>
+            </a>
+        </li>
+        {% endif %}
+        {% if site.author.stackoverflow %}
+        <li>
+            <a href="https://stackoverflow.com/{{ site.author.stackoverflow }}" target="_blank" class="smaller">
+              <span class="icon-stackoverflow"></span>
             </a>
         </li>
         {% endif %}
