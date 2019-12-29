@@ -1,17 +1,17 @@
 # Base blog settings
-baseurl                      : "/dactl/" # the subpath of your site,                         # e.g. /blog/
+baseurl                      : "" # the subpath of your site,                         # e.g. /blog/
                               # set to '' in case of hosting on GitHub
-url                          : "" # the base hostname & protocol for your site
+url                          : "https://thebstar.github.io" # the base hostname & protocol for your site
                                   # `http://<username>.github.io` - for GitHub
 
 blog:
-  title                      : dactl
+  title                      : BStar
   description                  : >
-                               this should contain a proper description
+                               A bit of cricketer, runner and a full stack engineer.
 
 # Layout configuration
   logo_path                  : "assets/img/dactl.svg" # path to logo file
-  search_path                : # "yourgitusername.github.io"
+  search_path                : "thebstar.github.io"
                                # needed for searchbox in archive page
   hero_layout                : true # turn on hero layout for blog and posts
   hero_placeholder           : "assets/img/generic_hero.jpg" # placeholder for hero image
@@ -26,14 +26,14 @@ blog:
 
 # Author info
 author:
-  fullname                  : Your Name
+  fullname                  : Bikram Sutar
   rss                       : true # generate RSS feed and show it's icon in header
-  mail                      : your@email.com # change to your e-mail address
-  twitter                   : twitter-user-name
-  github                    : github-user-name
-  youtube                   : youtube-user-name
-  stackoverflow             : stackoverflow-user-name
-  disqus                    : dactl # your disqus site name
+  mail                      : 6bikramsutar@gmail.com # change to your e-mail address
+  # twitter                   : twitter-user-name
+  github                    : thebstar
+  # youtube                   : youtube-user-name
+  # stackoverflow             : stackoverflow-user-name
+  # disqus                    : dactl # your disqus site name
   google_analytics          : # 'UA-XXXXXXXX-X'
   photo                     : "uploads/me2.png"
   photo2x                   : "uploads/me.png"

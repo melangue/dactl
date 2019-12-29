@@ -18,8 +18,31 @@ published: true
 
 {% include page/title.html title=page.title subtitle=page_subtitle %}
 
-## Some heading 
+## Glad you're here.
 
-I'll alert the crew. Sure. You'd be surprised how far a hug goes with Geordi, or Worf. Did you come here for something in particular or just general Riker-bashing? You did exactly what you had to do. You considered all your options, you tried every alternative and then you made the hard choice. Your shields were failing, sir. Well, that's certainly good to know. A surprise party? Mr. Worf, I hate surprise parties. I would *never* do that to you. And blowing into maximum warp speed, you appeared for an instant to be in two places at once. How long can two people talk about nothing? I recommend you don't fire until you're within 40,000 kilometers. Congratulations - you just destroyed the Enterprise. Worf, It's better than music. It's jazz. Yes, absolutely, I do indeed concur, wholeheartedly! What's a knock-out like you doing in a computer-generated gin joint like this? I can't. As much as I care about you, my first duty is to the ship. Some days you get the bear, and some days the bear gets you.
+Hi, I am Bikram. A biologist turned software engineer. I am from Tezpur, Assam. Currently living in Bangalore.
+
+I am a natural introvert. But I have worked hard to make me float around that line between introvert and extrovert. 
+
+Call me for a game of cricket or a run, I am always ready. Party, travel? Let me think...
+
+
+Although I specialise in web development. I would love to work on any interesting (or challenging, that's what they say) engineering problem, any domain, any stack. Checkout my skills here.
+
+From 2020, I am starting to plan out my year. Here are my plans for the year:
+
+{% comment %} add a x  between [] to mark as complete {% endcomment %}
+
+- [ ] &nbsp; Pass Google Mobile Web specialist certification (first half).
+- [ ] &nbsp; Run a half marathon (first half).
+- [ ] &nbsp; Play a organized leather ball tournament.
+- [ ] &nbsp; Contribute to at least 1 machine learning codebase.
+- [ ] &nbsp; Contribute to 4+ open source react projects.
+- [ ] &nbsp; Contribute to 2+ open source typescript project. Declaration file, etc...
+- [ ] &nbsp; Write 1+ dart application.
+- [ ] &nbsp; Win a CP event, or score 1800+ rating on hackerEarth.
+- [ ] &nbsp; Weekly tech blog, Bi-weekly life blog.
+- [ ] &nbsp; Montly Community give back. Its a small give back thing we were planning to start.
+- [ ] &nbsp; Obviously, better financial state.
 
 </div>
