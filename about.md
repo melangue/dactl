@@ -24,10 +24,10 @@ Hi, I am Bikram. A biologist turned software engineer. I am from Tezpur, Assam. 
 
 I am a natural introvert. But I have cracked the formula for floating around that line between introvert and extrovert. 
 
-Call me for a game of cricket or a run, I am always ready. Party, travel? Let me think...
+Call me for a game of cricket or a run, I am always ready. Party, Movies, Travel? Let me think...
 
 
-I specialise in web development. I would love to work on any interesting (or challenging, that's what they say) engineering problem, any domain, any stack. Checkout my skills here.
+I specialize in web development. I would love to work on any interesting (or challenging, that's what they say) engineering problem, any domain, any stack. Checkout my skills here.
 
 From 2020, I am starting to plan out my year. Here are my goals for the year:
 
