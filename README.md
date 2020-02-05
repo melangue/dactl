@@ -42,7 +42,7 @@ You can find credits at the bottom of this Readme file.
 
 ## Installation
 ### Running locally
-Assuming you've got Jekyll [installed](https://jekyllrb.com/docs/installation/), clone or download this repo, `cd` to wherever you've put `dactl` folder and run `jekyll s'`
+Assuming you've got Jekyll [installed](https://jekyllrb.com/docs/installation/), clone or download this repo, `cd` to wherever you've put `dactl` folder and run `bundle exec jekyll s'`
 
 ### Hosting on GitHub
 Fork this repo and rename it to `yourusername.github.io`... and that's it!  
