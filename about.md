@@ -27,21 +27,24 @@ I am a natural introvert. But I have cracked the formula for floating around tha
 Call me for a game of cricket or a run, I am always ready. Party, Movies, Travel? Let me think...
 
 
-I specialize in web development. I would love to work on any interesting (or challenging, that's what they say) engineering problem, any domain, any stack. Checkout my skills here.
+I specialize in web development. I would love to work on any interesting (or challenging, that's what they say) engineering problem, any domain, any stack.
 
-From 2020, I am starting to plan out my year. Here are my goals for the year:
-
-{% comment %} add a x  between [] to mark as complete {% endcomment %}
-
-- [ ] &nbsp; Pass Google Mobile Web specialist certification (first half).
-- [ ] &nbsp; Run a half marathon (first half).
-- [ ] &nbsp; Play an organized leather ball tournament.
-- [ ] &nbsp; Contribute to at least 1 machine learning codebase.
-- [ ] &nbsp; Contribute to 4+ open source react projects.
-- [ ] &nbsp; Contribute to 2+ open source typescript project. Declaration file, etc...
-- [ ] &nbsp; Write 1+ dart application.
-- [ ] &nbsp; Finish in top 30 in a CP event, or score 1800+ rating on hackerEarth.
-- [ ] &nbsp; Weekly tech blog, Bi-weekly life blog.
-- [ ] &nbsp; Montly Community give back. Its a small give back thing we were planning to start.
+### I have worked on
+  - Javascript
+  - Typescript
+  - React
+  - Mithril
+  - Meteor
+  - HTML
+  - CSS
+  - Graphql
+  - Python
+  - C
+  - Java
+  - Go
+  - Elm
+  - Shell
+  - FLASK
+  - SQL
 
 </div>
