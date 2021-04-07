@@ -97,6 +97,8 @@ const iconForTheme = (themeName) => {
 
 // initiate
 
+// set inital theme to light
+updateTheme(LightTheme);
 checkForSavedTheme();
 
 const el = document.getElementById('theme-switcher');
